@@ -11,3 +11,9 @@ container.addEventListener('click',(e)=>{
     selContainer.querySelector('.selected-video').setAttribute('controls','');
     selContainer.querySelector('.selected-video').style.display=`block`;
 });
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+        e.preventDefault();
+    }
+});
