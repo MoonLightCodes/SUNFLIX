@@ -13,7 +13,10 @@ container.addEventListener('click',(e)=>{
 });
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 document.addEventListener('keydown', (e) => {
-    if ((e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+    if ((e.ctrlKey && e.shiftKey && (e.key === 'i' || e.key === 'j' || e.key === 'c')) ||
+        (e.ctrlKey && e.key === 'u') || 
+        (e.ctrlKey && e.key === 's') || 
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
         (e.ctrlKey && e.key === 'U') || 
         (e.ctrlKey && e.key === 'S') || 
         (e.key === 'F12')  ) {
